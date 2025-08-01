@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Cas de Maladie - SIG Santé Publique</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <h1>Liste des cas de maladie</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nom</th>
+                <th>Date</th>
+                <th>Coordonnées</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="cas : ${casMaladies}">
+                <td th:text="${cas.id}"></td>
+                <td th:text="${cas.nom}"></td>
+                <td th:text="${cas.date}"></td>
+                <td th:text="${cas.position}"></td>
+            </tr>
+        </tbody>
+    </table>
+    <a th:href="@{/}">Retour à l'accueil</a>
+</body>
+</html>
