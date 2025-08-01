@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 2em;
+    background: #f9f9f9;
+}
+h1 {
+    color: #2368a4;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 0.5em;
+    text-align: left;
+}
+th {
+    background-color: #f1f1f1;
+}
+#map {
+    margin-top: 2em;
+    border: 1px solid #ccc;
+}
